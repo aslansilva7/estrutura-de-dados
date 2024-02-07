@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Array;
+
+namespace aula_3ed
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] vetor = { 0, 2, 3, 4, 7, 10, 18, 20 };
+
+            if (EstaEmOrdemCrescente(vetor))
+            {
+                Console.WriteLine("O vetor está em ordem crescente.");
+            }
+            else
+            {
+                Console.WriteLine("O vetor NÃO está em ordem crescente");
+            }
+        }
+
+        static bool EstaEmOrdemCrescente(int[] vetor)
+        {
+               for (int 1 = 0; 1 < vetor.Length - 1; i++)
+            {
+
+                if (vetor[i] > vetor[i + 1])
+                {
+                    return false;
+                }
+            }
+            return true;
+
+
+
+
+
+
+        }
+    }
+}
